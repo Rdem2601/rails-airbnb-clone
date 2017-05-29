@@ -22,9 +22,9 @@
 .navbar-wagon-brand {
   width: 50px;
   color: #FDECDA;
-  font-family: 'Piedra', cursive;
+  font-family: 'IM Fell DW Pica SC', serif;
   font-size:35px;
-  font-weight:bolder;
+  font-weight:bold;
 }
 
 .navbar-wagon-brand:hover {
@@ -45,7 +45,7 @@
   cursor: pointer;
   padding: 0 20px;
   font-family: 'Piedra', cursive;
-
+  font-weight: lighter;
 }
 
 /* Navbar standard link */
@@ -70,9 +70,11 @@
   font-family: 'Piedra', cursive;
   font-size: 20px;
   border: 2px solid #CDAA75;
+  font-weight: 300;
 }
+
 .navbar-wagon-button:hover {
-  font-weight: bold;
+  font-weight: 400;
   color: #FDECDA;
   background:  #47361E;
   border-color: #CDAA75;
