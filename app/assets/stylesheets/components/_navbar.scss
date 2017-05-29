@@ -19,10 +19,19 @@
 }
 
 /* Navbar logo */
-.navbar-wagon-brand img {
+.navbar-wagon-brand {
   width: 50px;
+  color: #FDECDA;
+  font-family: 'Rock Salt', cursive;
+  font-size:18px;
+  font-weight:bolder;
 }
 
+.navbar-wagon-brand:hover {
+  width: 50px;
+  color: #EFE9EA;
+  text-decoration: none;
+}
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
   display: flex;
@@ -35,6 +44,7 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
+  font-family: 'Rock Salt', cursive;
 }
 
 /* Navbar standard link */
@@ -53,8 +63,9 @@
   padding: 0 20px;
   border-radius: 20em;
   line-height: 40px;
-  background-color: #E6C9AB;
-  color: #EFE9EA;
+  background-color: #c1a992;
+  color: #EFEfEf;
+  font-family: 'Rock Salt', cursive;
   font-size: 14px;
   border: 2px solid #CDAA75;
 }
