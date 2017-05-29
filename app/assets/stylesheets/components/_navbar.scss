@@ -44,7 +44,8 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
-  font-family: 'Frijole', cursive;
+  font-family: Open sans;
+  font-size: 25px;
 
 }
 
@@ -67,12 +68,12 @@
   line-height: 40px;
   background-color: #FDECDA;
   color:  #47361E;
-  font-family: 'Frijole', cursive;
-  font-size: 20px;
+  font-family: Open sans;
+  font-size: 16px;
   border: 2px solid #CDAA75;
 }
 .navbar-wagon-button:hover {
-  font-weight: bold;
+  // font-weight: bold;
   color: #FDECDA;
   background:  #47361E;
   border-color: #CDAA75;
