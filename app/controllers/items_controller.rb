@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
 before_action :find_item, only: [:show, :destroy]
 
   def index
-    @items = Items.all
+    @items = Item.all
   end
 
   def new
