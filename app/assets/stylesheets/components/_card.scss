@@ -1,9 +1,10 @@
 
 .card{
   border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
   background-color: #FDECDA;
   padding:10px;
+  margin-top: 20px;
 }
 
 .card h3{
@@ -21,6 +22,13 @@
   position: relative;
   border-radius:3px;
 }
+
+.image-card h2{
+  color:  #FDECDA;
+  font-family: 'Piedra', cursive;
+  font-size: 20px;
+}
+
 .card-user {
   position: absolute;
   right: 10px;
