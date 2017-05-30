@@ -34,6 +34,6 @@ before_action :find_item, only: [:show, :destroy]
   end
 
   def item_params
-    params.require(:item).permit(:description, :price)
+    params.require(:item).permit(:name, :description, :price, :photo, :photo_cache)
   end
 end
