@@ -1,11 +1,22 @@
 
-.card {
+.card{
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  background-color: #FDECDA;
+  padding:10px;
+}
+
+.card h3{
+  color:  #47361E;
+  font-family: 'Piedra', cursive;
+}
+
+.image-card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   color: white;
   position: relative;
-  margin-top: 30px;
 }
 .card-user {
   position: absolute;
