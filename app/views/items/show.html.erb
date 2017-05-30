@@ -1,0 +1,9 @@
+<ul>
+  <li>Name: <%= @item.name %></li>
+  <li>Description: <%= @item.description %></li>
+  <li>Price: <%= @item.price %></li>
+  <li><%= image_tag @item.photo, height: 200, width: 300, crop: :fill ; %></li>
+  <li>Owner: <%= @item.user.fullname %></li>
+</ul>
+
+<%= link_to "Book this object!", new_item_booking_path(@item) %>
