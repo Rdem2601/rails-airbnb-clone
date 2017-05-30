@@ -1,0 +1,17 @@
+<h1>This is your personnal page</h1>
+
+<h2>Your account details</h2>
+<ul>
+  <li><%= @user.fullname  %></li>
+  <li><%= @user.address %></li>
+  <li><%= @user.email %></li>
+</ul>
+
+<h2>Your bookings</h2>
+<ul>
+<% @bookings.each do |booking| %>
+  <li> You booked <%= booking.item.name %> for <%= booking.number_of_days %> day from <%= booking.item.user.fullname %> starting from <%= booking.date %> </li>
+  <% end %>
+</ul>
+
+
