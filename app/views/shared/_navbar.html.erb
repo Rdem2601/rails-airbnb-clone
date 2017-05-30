@@ -9,9 +9,11 @@
 
     <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
     <% if user_signed_in? %>
-      Welcome <%= current_user.email %>
-      <%= link_to "my page", user_path(current_user) %>
-      <%= link_to "sign out", destroy_user_session_path, method: :delete, :class => "navbar-wagon-item navbar-wagon-button btn" %>
+      <div class="navbar-wagon-item navbar-wagon-link">
+        Welcome <%= current_user.email %>
+      </div>
+        <%= link_to "My page", user_path(current_user), :class => "navbar-wagon-item navbar-wagon-button btn"  %>
+        <%= link_to "sign out", destroy_user_session_path, method: :delete,:class => "navbar-wagon-item navbar-wagon-button btn" %>
     <% else %>
     <%= link_to "sign in", new_user_session_path, :class => "navbar-wagon-item navbar-wagon-button btn"  %>
     <% end %>

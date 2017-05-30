@@ -26,20 +26,20 @@
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
-.navbar-wagon-button {
+.banner-wagon-button {
   margin-left: 10px;
   padding: 0 20px;
-  border-radius: 20em;
+  border-radius: 15%;
   line-height: 40px;
-  background-color: #FDECDA;
+  background-color: rgba(253, 236, 218, 0.5);
   color:  #47361E;
   font-family: 'Piedra', cursive;
-  font-size: 20px;
+  font-size: 25px;
   border: 2px solid #CDAA75;
 }
-.navbar-wagon-button:hover {
+.banner-wagon-button:hover {
   font-weight: bold;
   color: #FDECDA;
-  background:  #47361E;
+  background:  rgba(71, 54, 30, 0.6);
   border-color: #CDAA75;
 }
