@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
 
 before_action :find_item, only: [:show, :destroy]
+before_action :authenticate_user!, only: [:new, :create, :destroy]
 
   def index
     @items = Item.all
@@ -15,8 +16,9 @@ before_action :find_item, only: [:show, :destroy]
 
   def create
     @item = Item.new(item_params)
+    @item.user = current_user
     if @item.save
-      redirect_to item_path(@item)
+      redirect_to items_path
     else
       render :new
     end
