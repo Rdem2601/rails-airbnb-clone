@@ -2,3 +2,47 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+.home-description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.fancy-title{
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(112, 81, 39, 0.4);
+  font-family: 'IM Fell DW Pica SC', serif;
+  color:#47361E;
+
+}
+
+.fancy-subtitle {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  color:#47361E;
+  padding-bottom: 30px;
+}
+
+.home-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: 'IM Fell DW Pica SC', serif;
+  color:#47361E;
+  padding: 10px;
+}
+
+.home-card h3{
+  color:#47361E;
+  font-family: 'IM Fell DW Pica SC', serif;
+  padding: 10px;
+  font-size: 30px;
+  text-shadow: 1px 1px rgba(112, 81, 39, 0.4);
+}
