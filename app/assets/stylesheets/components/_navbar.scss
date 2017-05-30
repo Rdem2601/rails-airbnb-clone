@@ -44,8 +44,11 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
-  font-family: 'Piedra', cursive;
+
   font-weight: lighter;
+
+  font-family: Open sans;
+  font-size: 25px;
 }
 
 /* Navbar standard link */
@@ -67,13 +70,15 @@
   line-height: 40px;
   background-color: #FDECDA;
   color:  #47361E;
-  font-family: 'Piedra', cursive;
   font-size: 20px;
+  font-family: Open sans;
+  font-size: 16px;
   border: 2px solid #CDAA75;
   font-weight: 300;
 }
 
 .navbar-wagon-button:hover {
+
   font-weight: 400;
   color: #FDECDA;
   background:  #47361E;
