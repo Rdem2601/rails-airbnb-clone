@@ -63,24 +63,23 @@
 /* Navbar right button */
 .navbar-wagon-button {
   margin-left: 10px;
-  padding: 0 20px;
-  border-radius: 20em;
+  padding: 0 15px;
+  border-radius: 5em;
   line-height: 40px;
   background-color: #FDECDA;
   color:  #47361E;
   font-size: 20px;
   font-family: 'IM Fell DW Pica SC', serif;
-  font-size: 16px;
   border: 2px solid #CDAA75;
   font-weight: 300;
 }
 
 .navbar-wagon-button:hover {
-
   font-weight: 400;
   color: #FDECDA;
   background:  #47361E;
   border-color: #CDAA75;
+  transition: 0.2s;
 }
 
 /* Navbar search form */
