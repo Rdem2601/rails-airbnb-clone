@@ -1,2 +1,16 @@
-show.html.erb
-<h1>Nice! You book this item for <%= @booking.number_of_days %> day from <%= @booking.item.user.fullname %> starting from <%= @booking.date %> </h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4">
+      <div class="login-form">
+      <h2>Nice! You booked this item for <%= @booking.number_of_days %> day from <%= @booking.item.user.fullname %>, starting from <%= @booking.date %>. </h2>
+        <p class="text-center">_______________</p>
+        <h2>You will have to pay <%= @booking.item.price.to_i * @booking.number_of_days %> euros.</h2>
+        <div class="btn-space btn-group">
+          <%= link_to "Find another object!", items_path, :class => "btn btn-success" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
