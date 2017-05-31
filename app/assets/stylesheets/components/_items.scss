@@ -1,0 +1,50 @@
+
+.item-card {
+  color: #FDECDA;
+  text-align: center;
+  height: 70vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.item-card h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(112, 81, 39, 0.4);
+  font-family: 'IM Fell DW Pica SC', serif;
+  color:#FDECDA;
+
+}
+.item-card p {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 1px rgba(112, 81, 39, 0.4);
+  margin-bottom: 20px;
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.item-card-button {
+  margin: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color:  #47361E;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 25px;
+  border: 2px solid #CDAA75;
+}
+.item-card-button:hover {
+  color: #47361E;
+  background:  rgba(253, 236, 218, 0.8);
+  border-color: #CDAA75;
+  text-decoration: none;
+}
+
