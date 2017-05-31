@@ -44,43 +44,41 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
-  font-weight: lighter;
+  font-weight: bold;
   font-family: Open sans;
-  font-size: 25px;
+  font-size: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #FDECDA;
 }
 
 /* Navbar standard link */
-.navbar-wagon-link {
-  color: #FDECDA;
-  font-size: 18px;
-}
 
-.navbar-wagon-link:hover {
-  color: #CDAA75;
+
+.navbar-wagon-item:hover {
   text-decoration: none;
 }
 
 /* Navbar right button */
 .navbar-wagon-button {
   margin-left: 10px;
-  padding: 0 15px;
-  border-radius: 5em;
-  line-height: 40px;
+  padding: 0 5px;
+  border-radius: 15em;
+  line-height: 25px;
   background-color: #FDECDA;
-  background-image: linear-gradient(-180deg, #FDECDA 0%, #77563E 98%);
+  background-image: linear-gradient(-180deg, #FDECDA 0%, #ccaa8f 98%);
   color:  #47361E;
   font-size: 20px;
   font-family: 'IM Fell DW Pica SC', serif;
   border: 2px solid #CDAA75;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .navbar-wagon-button:hover {
-  font-weight: 400;
+  font-weight: 700;
   color: #FDECDA;
   background:  #47361E;
   border-color: #CDAA75;
-  background-image: linear-gradient(-180deg, #47361E 0%, #77563E 98%);
+  background-image: linear-gradient(-180deg, #47361E 0%, #55431E 98%);
   transition: 0.2s;
 }
 

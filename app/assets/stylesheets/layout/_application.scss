@@ -6,16 +6,16 @@ body {
 }
 
 .wrapper{
+  position:relative;
   min-height: 100%;
-  position: relative;
+  width: 100%;
 }
 
 .wrapper h1{
   color: #47361E;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 200;
   font-family: 'IM Fell DW Pica SC', serif;
-  background-color: #FDECDA;
   padding: 10px 0;
 }
 
@@ -24,9 +24,9 @@ body {
 }
 
 .app-wagon-button {
-  margin-left:750px;
-  margin-right:750px;
-  display:block;
+  // margin-left:40%;
+  // margin-right:40%;
+  // display:block;
   margin-top:50px;
   margin-bottom:0%;
   padding: 0 20px;
@@ -39,13 +39,12 @@ body {
 }
 .app-wagon-button:hover {
   font-weight: bold;
-  color: #FDECDA;
-  background:  rgba(71, 54, 30, 0.6);
+  color: #47361E;
+  background:  rgba(253, 236, 218, 0.8);
   border-color: #CDAA75;
   text-decoration: none;
 }
 
 .button-container{
-  text-align: center;
-
+  margin-top: 40px;
 }
