@@ -12,6 +12,7 @@ before_action :authenticate_user!, only: [:new, :create, :destroy]
   end
 
   def show
+    @user = @item.user
   end
 
   def create
