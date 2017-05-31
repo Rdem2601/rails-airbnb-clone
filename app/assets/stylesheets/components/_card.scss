@@ -7,6 +7,7 @@
   margin-top: 20px;
 }
 
+
 .card h3{
   color:  #47361E;
   font-family: 'Nunito Sans', sans-serif;
@@ -23,10 +24,21 @@
   border-radius:3px;
 }
 
+.card-description a:hover {
+  text-decoration: none;
+}
+
 .image-card h2{
   color:  #FDECDA;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
+}
+
+.image-card h2:hover{
+  color:  #FDECDA;
+  font-weight: 500;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
 }
 
 .card-user {

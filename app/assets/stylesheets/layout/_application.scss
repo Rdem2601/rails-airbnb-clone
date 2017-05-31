@@ -30,16 +30,16 @@ body {
   // display:block;
   margin-top:50px;
   margin-bottom:0%;
-  padding: 0 20px;
-  border-radius: 15%;
-  background-color: rgba(253, 236, 218, 0.5);
+  padding: 0 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
   color:  #47361E;
-  font-family: 'Piedra', cursive;
-  font-size: 35px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 25px;
   border: 2px solid #CDAA75;
 }
+
 .app-wagon-button:hover {
-  font-weight: bold;
   color: #47361E;
   background:  rgba(253, 236, 218, 0.8);
   border-color: #CDAA75;

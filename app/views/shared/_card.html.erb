@@ -8,11 +8,9 @@
                url('<%= cl_image_path item.photo, height: 700, width: 1000, crop: :fill ; %>')">
             <div class="card-category">Trending</div>
             <div class="card-description">
-              <h2>
                 <%= link_to item_path(item) do %>
-                  <%= item.name %>
+                 <h2> <%= item.name %> </h2>
                 <% end %>
-              </h2>
             </div>
           </div>
           <h3>
