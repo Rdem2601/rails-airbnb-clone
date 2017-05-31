@@ -1,37 +1,53 @@
-
-.item-card {
-  color: #FDECDA;
-  text-align: center;
-  height: 70vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.item-frame{
+  border-radius: 2px;
+  box-shadow: 0 2px 3px  rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  padding:10px;
+  margin: 20px;
 }
 
+.av-center {
+  align-items: center;
+}
 
+.item-card {
+  color: #FFFFFF;
+  min-height: 530px;
+  background-size: cover !important;
+}
+
+.item-text-card {
+  color: #FDECDA;
+  text-align: center;
+  min-height: 300px;
+}
 
 .item-card h1 {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 200;
   text-shadow: 0px 1px rgba(112, 81, 39, 0.4);
   font-family: 'IM Fell DW Pica SC', serif;
-  color:#FDECDA;
-
+  color:#FFFFFF;
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.7);
 }
-.item-card p {
-  font-size: 30px;
+
+.item-text-card h2 {
+  text-align: center;
+  font-size: 35px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #47361E;
+}
+
+.item-text-card p {
+  font-size: 20px;
+  font-weight: 200;
+  color: #47361E;
   text-shadow: 0px 1px rgba(112, 81, 39, 0.4);
   margin-bottom: 20px;
-  font-family: 'IM Fell DW Pica SC', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .item-card-button {
-  margin: 10px;
   padding: 0 20px;
   border-radius: 5px;
   line-height: 40px;
@@ -40,6 +56,7 @@
   font-family: 'Nunito Sans', sans-serif;
   font-size: 25px;
   border: 2px solid #CDAA75;
+  align-items: center;
 }
 .item-card-button:hover {
   color: #47361E;

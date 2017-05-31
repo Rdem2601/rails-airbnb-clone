@@ -12,6 +12,7 @@ before_action :authenticate_user!, only: [:new, :create, :destroy]
   end
 
   def show
+    @user = @item.user
   end
 
   def create
@@ -26,7 +27,7 @@ before_action :authenticate_user!, only: [:new, :create, :destroy]
 
   def destroy
     @item.destroy
-    redirect_to item_path
+    redirect_to items_path
   end
 
   private
