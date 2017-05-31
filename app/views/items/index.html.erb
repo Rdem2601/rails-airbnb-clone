@@ -1,10 +1,16 @@
 
 <div class="wrapper">
   <div class="text-center">
-    <h1>Incredible stuffs to improve your Life</h1>
+    <h1>Incredible stuff to improve your Life</h1>
   </div>
   <%= render "shared/card"%>
 </div>
-<div class="button-container">
-    <%= link_to "Add item", new_item_path, :class => "app-wagon-button" %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-5">
+      <div class="button-container">
+        <%= link_to "Add item", new_item_path, :class => "app-wagon-button" %>
+      </div>
+    </div>
+  </div>
 </div>

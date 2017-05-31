@@ -7,10 +7,10 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <div class="navbar-wagon-item">Contact</div>
     <% if user_signed_in? %>
-      <div class="navbar-wagon-item navbar-wagon-link">
-        Welcome <%= current_user.email %>
+      <div class="navbar-wagon-item">
+        <%= current_user.fullname %>
       </div>
         <%= link_to "My page", user_path(current_user), :class => "navbar-wagon-item navbar-wagon-button btn"  %>
         <%= link_to "sign out", destroy_user_session_path, method: :delete,:class => "navbar-wagon-item navbar-wagon-button btn" %>
