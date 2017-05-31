@@ -1,6 +1,11 @@
 <h1>This is your personnal page</h1>
 
 <h2>Your account details</h2>
+
+<% if @user.photo != nil %>
+<%= cl_image_tag @user.photo, class: "avatar-bordered" %>
+<% end %>
+
 <ul>
   <li><%= @user.fullname  %></li>
   <li><%= @user.address %></li>
@@ -9,9 +14,16 @@
 
 <h2>Your bookings</h2>
 <ul>
-<% @bookings.each do |booking| %>
+  <% @bookings.each do |booking| %>
   <li> You booked <%= booking.item.name %> for <%= booking.number_of_days %> day from <%= booking.item.user.fullname %> starting from <%= booking.date %> </li>
   <% end %>
 </ul>
+
+<h2>Upload your picture</h2>
+<%= simple_form_for(@user) do |f| %>
+<%= f.input :photo %>
+<%= f.input :photo_cache, as: :hidden %>
+<%= f.submit %>
+<% end %>
 
 
