@@ -1,9 +1,21 @@
-<ul>
-  <li>Name: <%= @item.name %></li>
-  <li>Description: <%= @item.description %></li>
-  <li>Price: <%= @item.price %></li>
-  <li><%= image_tag @item.photo, height: 200, width: 300, crop: :fill ; %></li>
-  <li>Owner: <%= @item.user.fullname %></li>
-</ul>
+      <div class="item-card">
+        <div  class = "" style=" background-image: url('<%= cl_image_path @item.photo , crop: :fill %>'); background-size: cover !important; width: 100%; height:100%;">
+        </div>
+      </div>
 
-<%= link_to "Book this object!", new_item_booking_path(@item) %>
+
+      <h1><%= @item.name %></h1>
+      <div>
+        <p>Description: <%= @item.description %></p>
+      </div>
+      <div>
+        <p>Price: <%= @item.price %></p>
+      </div>
+      <div>
+        <p>Owner: <%= @item.user.fullname %></p>
+      </div>
+      <div class="btn-group">
+       <%= link_to "Book this object!", new_item_booking_path(@item), :class => "item-card-button" %>
+      </div>
+
+
