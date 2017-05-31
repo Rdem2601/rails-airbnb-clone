@@ -1,35 +1,10 @@
- <%= link_to "Add item", new_item_path  %>
 
 <div class="wrapper">
   <div class="text-center">
     <h1>Incredible stuffs to improve your Life</h1>
   </div>
-  <div class="container">
-    <div class="row">
-      <% @items.each do |item| %>
-        <div class ="col-xs-12  col-sm-6 col-md-3" >
-          <div class="card">
-            <div class="image-card"
-                 style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-                 url('<%= cl_image_path item.photo, height: 500, width: 800, crop: :fill ; %>')">
-              <div class="card-category">Trending</div>
-              <div class="card-description">
-                <h2>
-                  <%= link_to item_path(item) do %>
-                    <%= item.name %>
-                  <% end %>
-                </h2>
-              </div>
-            </div>
-            <h3>
-              <span class="fa fa-credit-card-alt" aria-hidden="true">
-              </span>  <%= item.price %>
-              <i class="fa fa-eur" aria-hidden="true"></i> / Day
-            </h3>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <%= render "shared/card"%>
 </div>
-
+<div class="button-container">
+    <%= link_to "Add item", new_item_path, :class => "app-wagon-button" %>
+</div>
