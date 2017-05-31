@@ -12,24 +12,14 @@
 
 .item-card {
   color: #FFFFFF;
-  height: 70vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  min-height: 530px;
   background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .item-text-card {
   color: #FDECDA;
   text-align: center;
-  height: 70vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 300px;
 }
 
 .item-card h1 {
