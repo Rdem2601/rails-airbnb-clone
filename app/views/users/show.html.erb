@@ -17,7 +17,7 @@
           <li> <span class="bold">Name:</span> <%= @user.fullname  %></li>
           <li> <span class="bold">Address:</span> <%= @user.address %></li>
           <li> <span class="bold">Email:</span> <%= @user.email %></li>
-          <% if @user.photo == nil || @user.photo.empty? %>
+          <% if @user.photo == nil %>
           <h3>Upload your picture</h3>
           <%= simple_form_for(@user) do |f| %>
           <%= f.input :photo %>
