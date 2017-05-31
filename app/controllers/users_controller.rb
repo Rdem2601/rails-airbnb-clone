@@ -2,6 +2,6 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-    @bookings = Booking.where(params[@user.id])
+    @bookings = Booking.where(user_id: @user.id)
   end
 end
