@@ -4,6 +4,8 @@
 //= require action_cable
 //= require_self
 //= require_tree ./channels
+//= require underscore
+//= require gmaps/google
 
 (function() {
   this.App || (this.App = {});
