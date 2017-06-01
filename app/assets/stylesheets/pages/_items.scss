@@ -1,0 +1,21 @@
+.body {
+  height: 100vh;
+
+}
+
+.left-side {
+  width: 60%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.child {
+  overflow: scroll;
+}
+
+.right-side {
+  position: absolute;
+  top:70px;
+  right: 0;
+  width: 40%;
+}
