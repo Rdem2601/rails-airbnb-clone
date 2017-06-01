@@ -14,6 +14,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.item = Item.find(params[:item_id])
     @booking.date = DateTime.now.to_date
+    @booking.amount_paid = @booking.item.price.to_i * @booking.number_of_days
     if @booking.save
       redirect_to item_booking_path(@booking.item, @booking)
     else
