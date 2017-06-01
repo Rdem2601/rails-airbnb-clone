@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Faster+One|Freckle+Face|Frijole|Holtwood+One+SC|IM+Fell+DW+Pica+SC|Kranky|Luckiest+Guy  |Piedra|Slackey|Nunito+Sans" rel="stylesheet">
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUnl-5ftam_Arv5meYVhnTxcNPKM0qpJg&callback=initMap"
-  type="text/javascript"></script>
   <title>UNborrowable</title>
   <%= csrf_meta_tags %>
   <%= action_cable_meta_tag %>
   <%= stylesheet_link_tag 'application', media: 'all' %>
-  <%= javascript_include_tag "https://maps.google.com/maps/api/js" %>
-  <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
-  <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
 
 </head>
 
@@ -24,8 +19,12 @@
       <%= yield %>
     </div>
     <%= render "shared/footer" %>
-     <%= javascript_include_tag 'application' %>
   </div>
+    <%= javascript_include_tag "https://maps.google.com/maps/api/js?libraries=places&key=#{ENV['AIzaSyC49HbdeWeqqjuFzS0IFpo_R0tazZg43pM']}"
+%>
+  <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
+  <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
+  <%= javascript_include_tag 'application' %>
   <%= yield(:after_js) %>
 </body>
 </html>
