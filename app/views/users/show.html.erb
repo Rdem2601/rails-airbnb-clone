@@ -35,7 +35,7 @@
         </div>
         <ul>
           <% @bookings.each do |booking| %>
-          <li> You booked <%= booking.item.name %> for <%= booking.number_of_days %> day from <%= booking.item.user.fullname %> starting from <%= booking.date %> </li>
+          <li> Booked <%= booking.item.name %> for <%= booking.number_of_days %> day from <%= booking.item.user.fullname %> starting from <%= booking.date %> </li>
           <% end %>
         </ul>
       </div>
