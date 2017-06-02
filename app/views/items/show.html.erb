@@ -30,9 +30,11 @@
           <p> <%= @item.user.fullname %></p>
           <p> <%= link_to "Check user's profile", user_path(@user)%> </p>
 
+          <% if @user != current_user %>
           <div class="btn-group">
             <%= link_to "Book this object!", new_item_booking_path(@item), :class => "item-card-button" %>
           </div>
+          <% end %>
           <br>
           <br>
           <p><%= link_to "Go back to the list", items_path %></p>
