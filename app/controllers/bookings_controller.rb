@@ -16,7 +16,6 @@ class BookingsController < ApplicationController
     @booking.date = DateTime.now.to_date
     @booking.amount_paid = @booking.item.price.to_i * @booking.number_of_days
     if @booking.save
-      BookingMailer.creation_confirmation(@booking).deliver_now
       redirect_to item_booking_path(@booking.item, @booking)
     else
       render :new
