@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def show
-    @user = current_user
+    @user = User.find(params[:id])
     @bookings = Booking.where(user_id: @user.id)
     @items = Item.where(user_id: @user.id)
   end
