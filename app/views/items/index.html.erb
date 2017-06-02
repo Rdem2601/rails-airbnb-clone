@@ -3,13 +3,13 @@
       <h1>Incredible stuff to improve your Life</h1>
     </div>
 
-    <div class="cards">
-
-      <%= render "shared/card" %>
-      <br>
-    </div>
 
 
+    <%= render "shared/card" %>
+    <br>
+
+
+  <div id="map" style="width: 100%; height: 600px;"></div>
     <% content_for(:after_js) do %>
     <%= javascript_tag do %>
     $(document).ready(function() {
@@ -27,3 +27,4 @@
 });
 <% end %>
 <% end %>
+</div>
