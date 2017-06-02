@@ -1,6 +1,5 @@
 .body {
   height: 100vh;
-
 }
 
 .left-side {
@@ -18,4 +17,21 @@
   top:70px;
   right: 0;
   width: 40%;
+}
+
+.reviews-wrapper {
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-top: 50px;
+  padding: 0px 100px;
+  padding-top: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px  rgba(0,0,0,0.2);
+  padding-bottom: 20px;
+}
+
+.one-review {
+  border-bottom: solid 1px;
+  padding-top: 20px;
 }

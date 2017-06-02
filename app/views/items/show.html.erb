@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-sm-6 col-md-8">
       <div class="item-frame">
         <div class="item-card" style=" background-image: url('<%= cl_image_path @item.photo , crop: :fill %>');">
-            <h1><%= @item.name %></h1>
+          <h1><%= @item.name %></h1>
         </div>
       </div>
     </div>
@@ -28,16 +28,48 @@
           <% end %>
 
           <p> <%= @item.user.fullname %></p>
+          <p> <%= link_to "Check user's profile", user_path(@user)%> </p>
 
+          <% if @user != current_user %>
           <div class="btn-group">
             <%= link_to "Book this object!", new_item_booking_path(@item), :class => "item-card-button" %>
           </div>
+          <% end %>
+          <br>
+          <br>
+          <p><%= link_to "Go back to the list", items_path %></p>
 
           <div class="btn-group">
             <% if @user == current_user %>
-              <%= link_to "Delete this object!", item_path(@item), method: :delete, :class => "item-card-button" %>
-              <% end %>
+            <%= link_to "Delete this object!", item_path(@item), method: :delete, :class => "item-card-button" %>
+            <% end %>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="reviews-wrapper">
+
+<h1>Reviews</h1>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-md_offset-3">
+        <div class='reviews'>
+          <div class="form">
+            <%= render 'reviews/form' %>
+          </div>
+          <div class="reviews-list" id="reviews">
+            <% unless @item.reviews.empty? %>
+            <% @item.reviews.each do |review| %>
+            <div class="one-review">
+            <p> <%= review.content %>, posted by <%=review.user.fullname%>. </p>
+            <p><%= link_to "Delete this review", item_review_path(@item, review), method: :delete %></p>
+            </div>
+            <% end %>
+            <%end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
