@@ -20,6 +20,7 @@ before_action :authenticate_user!, only: [:new, :create, :destroy]
 
   def show
     @user = @item.user
+    @review = Review.new
   end
 
   def create
